@@ -1,0 +1,10 @@
+﻿CREATE PROCEDURE SeedNetworks
+AS
+BEGIN
+
+SET IDENTITY_INSERT Network ON
+INSERT INTO Network(Id, Name) VALUES(1, 'TestNetwork')
+SET IDENTITY_INSERT Network OFF
+
+
+END

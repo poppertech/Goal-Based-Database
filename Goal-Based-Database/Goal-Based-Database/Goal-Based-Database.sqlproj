@@ -68,5 +68,10 @@
     <Build Include="dbo\Tables\Node.sql" />
     <Build Include="dbo\Stored Procedures\GetCashFlowsByNetworkId.sql" />
     <Build Include="dbo\Stored Procedures\GetNodesByNetworkId.sql" />
+    <Build Include="dbo\Stored Procedures\SeedNetworks.sql" />
+    <Build Include="dbo\Stored Procedures\SeedCashFlows.sql" />
+    <Build Include="dbo\Stored Procedures\SeedNodes.sql" />
+    <Build Include="dbo\Stored Procedures\SeedDistributions.sql" />
+    <Build Include="dbo\Stored Procedures\Seed.sql" />
   </ItemGroup>
 </Project>
