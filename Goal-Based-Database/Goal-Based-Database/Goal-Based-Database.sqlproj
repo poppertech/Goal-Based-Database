@@ -73,5 +73,8 @@
     <Build Include="dbo\Stored Procedures\SeedNodes.sql" />
     <Build Include="dbo\Stored Procedures\SeedDistributions.sql" />
     <Build Include="dbo\Stored Procedures\Seed.sql" />
+    <Build Include="dbo\Stored Procedures\InsertNetwork.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateNetwork.sql" />
+    <Build Include="dbo\Stored Procedures\DeleteNetwork.sql" />
   </ItemGroup>
 </Project>
