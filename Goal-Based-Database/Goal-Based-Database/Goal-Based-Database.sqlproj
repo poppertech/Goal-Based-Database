@@ -76,5 +76,6 @@
     <Build Include="dbo\Stored Procedures\InsertNetwork.sql" />
     <Build Include="dbo\Stored Procedures\UpdateNetwork.sql" />
     <Build Include="dbo\Stored Procedures\DeleteNetwork.sql" />
+    <Build Include="dbo\Stored Procedures\UpsertCashFlow.sql" />
   </ItemGroup>
 </Project>
