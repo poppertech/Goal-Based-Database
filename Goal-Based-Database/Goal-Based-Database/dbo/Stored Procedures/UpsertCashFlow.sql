@@ -4,7 +4,7 @@
 AS
 BEGIN
 
-	DECLARE @NewCashFlows As TABLE(Id INT, Cost FLOAT);
+	DECLARE @NewCashFlows AS TABLE(Id INT, Cost FLOAT);
 
 	INSERT INTO @NewCashFlows
 	SELECT json_cash_flows.Id, json_cash_flows.Cost
@@ -15,7 +15,7 @@ BEGIN
 
 	MERGE INTO CashFlow AS TARGET
 	USING @NewCashFlows AS SOURCE
-	ON TARGET.Id = SOURCE.Id AND @NetworkId = Target.NetworkId
+	ON TARGET.Id = SOURCE.Id
 	WHEN MATCHED AND TARGET.Cost <> SOURCE.Cost THEN
 	UPDATE SET Cost = source.Cost
 	WHEN NOT MATCHED BY TARGET THEN

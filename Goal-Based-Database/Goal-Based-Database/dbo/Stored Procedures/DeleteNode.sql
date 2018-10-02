@@ -1,0 +1,8 @@
+﻿CREATE PROCEDURE DeleteNode
+	@Id INT
+AS
+BEGIN
+
+	DELETE Node WHERE Id = @Id;
+
+END
