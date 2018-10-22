@@ -5,6 +5,7 @@ BEGIN
 
 SELECT 
 	[node].Id AS NodeId,
+	[node].Name AS NodeName,
 	[node].ParentId AS ParentId,
 	[node].InitialInvestment AS InitialInvestment,
 	[node].InitialPrice AS InitialPrice,
