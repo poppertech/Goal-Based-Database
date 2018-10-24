@@ -3,7 +3,7 @@ AS
 BEGIN
 
 SET IDENTITY_INSERT Network ON
-INSERT INTO Network(Id, Name) VALUES(1, 'TestNetwork')
+INSERT INTO Network(Id, Name, Url) VALUES(1, 'TestNetwork', 'test-network')
 SET IDENTITY_INSERT Network OFF
 
 

@@ -4,7 +4,8 @@ BEGIN
 
 	SELECT 
 		Id AS Id,
-		[Name] AS [Name]
+		[Name] AS [Name],
+		[Url] AS [Url]
 	FROM Network
 
 END
