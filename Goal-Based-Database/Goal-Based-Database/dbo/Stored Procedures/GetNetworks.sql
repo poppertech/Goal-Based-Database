@@ -1,4 +1,5 @@
 ﻿CREATE PROCEDURE GetNetworks
+	@Url varchar(200) = NULL
 AS
 BEGIN
 
@@ -7,5 +8,6 @@ BEGIN
 		[Name] AS [Name],
 		[Url] AS [Url]
 	FROM Network
+	WHERE @Url = NULL OR @Url = [Url]
 
 END
