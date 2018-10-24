@@ -8,6 +8,6 @@ BEGIN
 		[Name] AS [Name],
 		[Url] AS [Url]
 	FROM Network
-	WHERE @Url = NULL OR @Url = [Url]
+	WHERE @Url IS NULL OR @Url = [Url]
 
 END
