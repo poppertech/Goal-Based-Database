@@ -82,6 +82,6 @@
     <Build Include="dbo\Stored Procedures\DeleteNode.sql" />
     <Build Include="dbo\Stored Procedures\UpsertDistribution.sql" />
     <Build Include="dbo\Stored Procedures\GetNetworks.sql" />
-    <Build Include="dbo\Stored Procedures\GetNodeByName.sql" />
+    <Build Include="dbo\Stored Procedures\GetNodeByUrl.sql" />
   </ItemGroup>
 </Project>

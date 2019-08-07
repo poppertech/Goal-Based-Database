@@ -1,5 +1,6 @@
 ﻿CREATE PROCEDURE GetNodeByUrl
-	@Url VARCHAR(200)
+	@NodeUrl VARCHAR(200),
+	@NetworkUrl VARCHAR(200)
 AS
 BEGIN
 
@@ -12,6 +13,9 @@ BEGIN
 		[node].InitialPrice AS InitialPrice,
 		[node].IsPortfolioComponent AS IsPortfolioComponent
 	FROM [Node] AS [node]
-	WHERE [node].Url = @Url
+	JOIN [Network] AS [network]
+	ON [node].NetworkId = [network].Id
+	WHERE [node].Url = @NodeUrl
+	AND [network].Url = @NetworkUrl
 
 END
